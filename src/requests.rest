@@ -1,0 +1,140 @@
+### Rota Clientes 
+
+###
+GET http://localhost:3000/clients
+
+
+###
+POST http://localhost:3000/newClient
+Content-Type: application/json
+
+{
+    "fullName": "Pedro Pandorim",
+    "cpf": "13325928454",
+    "tel": "24141825687",
+    "active": "sim",
+    "cep": "44054362",
+    "address": "Gentio do Ouro",
+    "district": "Parque Ipê",
+    "city": "Feira de Santana",
+    "state": "BA"
+}
+
+###
+DELETE http://localhost:3000/cliente/64680f92271438b6a2a09b59
+
+
+### Rota Categoria
+
+###
+POST http://localhost:3000/createCategory
+Content-Type: application/json
+
+{
+    "name": "Brinquedo"
+}
+
+###
+GET http://localhost:3000/categoryList
+
+### Rota Pets
+
+###
+GET http://localhost:3000/pets
+
+###
+PUT  http://localhost:3000/updatePet/6477c76672b62f50d480d11e
+Content-Type: application/json
+
+{
+    "petPicture": "asdasd",
+    "name": "José Messia",
+    "race": "Pé Duro",
+    "size": "Médio",
+    "age": 8,
+    "weight": 10.3,
+    "sex": "Macho",
+    "owner": "646fdb15f7ffc8723b41ac9d"
+}
+
+###
+
+DELETE http://localhost:3000/deletePet/64772fa255acbf3db1c428d3
+
+
+### Rota Produto
+
+POST http://localhost:3000/newProduct
+Content-Type: application/json
+
+{
+    "productName": "Ração Premiumn",
+    "category": "Alimento",
+    "stock": 2222,
+    "price": 666
+}
+
+###
+GET http://localhost:3000/services
+
+
+### Rota Usuário
+POST http://localhost:3000/newService/647f1fcfaf0130c337908d3a/6479da2d0b93a5b0cecc19b1
+Content-Type: application/json
+
+{
+    "bath": true,
+    "shave": false,
+    "nails": false,
+    "delivery": true,
+    "comments": "asjdnaksjdasd"
+}
+
+###
+DELETE http://localhost:3000/deleteService/647e66aa003f2c05ab58227b
+
+
+
+
+###
+
+POST http://localhost:3000/newProduct
+Content-Type: application/json
+
+{
+    "productName": "Delivery",
+    "category": "Serviço",
+    "stock": 1,
+    "price": 10
+}
+
+###
+
+DELETE http://localhost:3000/deleteProduct/64877824ac87679cf8bbbe02
+
+
+###
+
+POST http://localhost:3000/newEmployee
+Content-Type: application/json
+
+{
+    "user": "admin",
+    "password": "admin"
+}
+
+###
+PUT http://localhost:3000/updateProduct/6487704a218d96e02fa43d09
+Content-Type: application/json
+
+{
+    "productName": "Joseiznho",
+    "category": "Alimento",
+    "stock": 22,
+    "price": 15
+}
+
+
+###
+
+GET http://localhost:3000/getClient/648a212f1c52cfe5ff0d5bbc
